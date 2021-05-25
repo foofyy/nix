@@ -1,17 +1,19 @@
 # Nix
-made by foof
+a Minecraft mod made by foof
 ###
 a small mod that adds a bunch of random stuff ranging from decorative blocks to powerful armour and tools.
-## feature list
-### Blocks
-
+## Feature List
+### Decorative Blocks
 - Rocky Dirt
 - Clay Pot
-- Adamantite block
-- Adamantite ore
-### Items & armours
 
-- Adamantite - and armour set
+### Four New Armour Materials
+- Adamantite - an armour set focused on speed and mobility
+- Mythril - an armour set focused on damage
+- Cobalt - an armour set focused on mining speed
+- Titanium - an armour set overall more powerful than the rest; has 3 new types of weapons (saber, broadsword, waraxe), and a unique set bonus!
+### New Dimension: the Otherworld
+- the otherworld is a dimension filled with strange things, not bad or good.
 
 ## License
 
