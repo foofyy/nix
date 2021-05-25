@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "nix:adamantite_pickaxe",
+    "nix:mythril_pickaxe",
+    "nix:cobalt_pickaxe"
+  ]
+}

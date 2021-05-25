@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "nix:cobalt_ore"
+  },
+  "result": "nix:cobalt_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

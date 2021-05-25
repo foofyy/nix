@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nix:block/otherbark_log_top",
+    "side": "nix:block/otherbark_log"
+  }
+}

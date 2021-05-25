@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "nix:block/godstone_grass" }
+  }
+}

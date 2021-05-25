@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.foof.nix.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "PlantBlockMixin",
+    "FeatureMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

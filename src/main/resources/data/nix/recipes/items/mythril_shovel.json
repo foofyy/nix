@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "nix:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "nix:mythril_shovel"
+  }
+}

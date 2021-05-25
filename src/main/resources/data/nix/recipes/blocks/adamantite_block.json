@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nix:adamantite_ingot"
+    }
+  },
+  "result": {
+    "item": "nix:adamantite_block",
+    "count": 1
+  }
+}

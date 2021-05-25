@@ -1,0 +1,54 @@
+{
+  "surface_builder": "nix:otherworld",
+  "depth": 0.125,
+  "scale": 0.2,
+  "temperature": 0.9,
+  "downfall": 0,
+  "precipitation": "none",
+  "category": "plains",
+  "effects": {
+    "sky_color": 11116287,
+    "fog_color": 13486079,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 12124104,
+    "foliage_color": 11599728
+  },
+  "starts": [],
+  "spawners": 
+  {
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "weight": 12,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_berry_sparse",
+      "nix:aether_flowers",
+      "nix:skyforest",
+      "nix:aether_glowstone",
+      "nix:aether_skyrocks",
+      "minecraft:ore_coal",
+      "minecraft:ore_diamond",
+      "minecraft:ore_iron",
+      "nix:aether_clouds"
+    ]
+  ]
+}

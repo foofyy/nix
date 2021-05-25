@@ -1,0 +1,7 @@
+{
+    "config": {
+      "start_pool": "nix:ruinssky",
+      "size": 0
+    },
+    "type": "minecraft:village"
+  }

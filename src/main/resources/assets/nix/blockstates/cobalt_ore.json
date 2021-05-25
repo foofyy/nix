@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "nix:block/cobalt_ore" }
+  }
+}

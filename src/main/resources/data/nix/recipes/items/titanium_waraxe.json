@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "nnn",
+        "n/n",
+        " / "
+    ],
+    "key": {
+        "n": {
+            "item": "nix:titanium_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "nix:titanium_waraxe",
+        "count": 1
+    }
+}

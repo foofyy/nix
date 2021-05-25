@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "nix:block/otherbark_log"
+    },
+    "axis=z": {
+      "model": "nix:block/otherbark_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "nix:block/otherbark_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

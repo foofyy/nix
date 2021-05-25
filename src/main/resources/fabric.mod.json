@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "nix",
+  "version": "${version}",
+
+  "name": "nix",
+  "description": "beans.",
+  "authors": [
+    "foof"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/nix/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.foof.nix.NixKt::init"
+    ]
+  },
+  "mixins": [
+    "nix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nix:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "nix:mythril_block",
+    "count": 1
+  }
+}

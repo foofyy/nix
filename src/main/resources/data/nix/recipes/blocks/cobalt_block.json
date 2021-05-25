@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nix:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "nix:cobalt_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nix:adamantite_gem"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "nix:adamantite_gem"
+    },
+    {
+      "item": "nix:adamantite_gem"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "nix:adamantite_gem"
+    }
+  ],
+  "result": {
+    "item": "nix:adamantite_ingot",
+    "count": 1
+  }
+}
