@@ -3,6 +3,7 @@ package net.foof.nix.worldgen
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors
 import net.foof.nix.register.Blocks
+import net.minecraft.structure.rule.BlockMatchRuleTest
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.BuiltinRegistries
 import net.minecraft.util.registry.Registry
@@ -54,6 +55,25 @@ object Ores {
         )
         .spreadHorizontally()
         .repeat(5) // number of veins per chunk
+    private val TITANIUM_GODSTONE_ORE = Feature.ORE
+        .configure(
+            OreFeatureConfig(
+                BlockMatchRuleTest(Blocks.GODSTONE),  // base block is endstone in the end biomes
+                Blocks.TITANIUM_GODSTONE_ORE.getDefaultState(),
+                9
+            )
+        )
+        .decorate(
+            Decorator.RANGE.configure(
+                RangeDecoratorConfig(
+                    0,
+                    0,
+                    64
+                )
+            )
+        )
+        .spreadHorizontally()
+        .repeat(20)
 
     val ORE_MYTHRIL_OVERWORLD: ConfiguredFeature<*, *> = Feature.ORE
         .configure(
@@ -95,7 +115,7 @@ object Ores {
             .spreadHorizontally()
             .repeat(6) // number of veins per chunk
 
-    fun onInitialize() {
+    fun init() {
 
         val oreAdamantiteOverworld: RegistryKey<ConfiguredFeature<*, *>> = RegistryKey.of(
             Registry.CONFIGURED_FEATURE_WORLDGEN,
@@ -104,6 +124,10 @@ object Ores {
         val oreTitaniumOverworld: RegistryKey<ConfiguredFeature<*, *>> = RegistryKey.of(
             Registry.CONFIGURED_FEATURE_WORLDGEN,
             Identifier("nix", "ore_titanium_overworld")
+        )
+        val titanium_godstone_ore = RegistryKey.of(
+            Registry.CONFIGURED_FEATURE_WORLDGEN,
+            Identifier("nix", "titanium_godstone_ore")
         )
         val oreMythrilOverworld: RegistryKey<ConfiguredFeature<*, *>> = RegistryKey.of(
             Registry.CONFIGURED_FEATURE_WORLDGEN,
@@ -116,29 +140,15 @@ object Ores {
         )
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreAdamantiteOverworld.value, ORE_ADAMANTITE_OVERWORLD)
-        BiomeModifications.addFeature(
-            BiomeSelectors.foundInOverworld(),
-            GenerationStep.Feature.UNDERGROUND_ORES,
-            oreAdamantiteOverworld
-        )
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreAdamantiteOverworld)
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTitaniumOverworld.value, ORE_TITANIUM_OVERWORLD)
-        BiomeModifications.addFeature(
-            BiomeSelectors.foundInOverworld(),
-            GenerationStep.Feature.UNDERGROUND_ORES,
-            oreTitaniumOverworld
-        )
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTitaniumOverworld)
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, titanium_godstone_ore.value, TITANIUM_GODSTONE_ORE)
+        // BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTitaniumOtherworld)
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreMythrilOverworld.value, ORE_MYTHRIL_OVERWORLD)
-        BiomeModifications.addFeature(
-            BiomeSelectors.foundInOverworld(),
-            GenerationStep.Feature.UNDERGROUND_ORES,
-            oreMythrilOverworld
-        )
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreMythrilOverworld)
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreCobaltOverworld.value, ORE_COBALT_OVERWORLD)
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES,
-                oreCobaltOverworld
-        )
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreCobaltOverworld)
 
     }
 

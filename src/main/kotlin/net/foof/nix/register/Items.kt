@@ -156,6 +156,7 @@ object Items {
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "cobalt_ore"), BlockItem(Blocks.COBALT_ORE, FabricItemSettings().group(GROUP)))
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "cobalt_block"), BlockItem(Blocks.COBALT_BLOCK, FabricItemSettings().group(GROUP)))
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "titanium_ore"), BlockItem(Blocks.TITANIUM_ORE, FabricItemSettings().group(GROUP)))
+        Registry.register(Registry.ITEM, Identifier(MOD_ID, "titanium_godstone_ore"), BlockItem(Blocks.TITANIUM_GODSTONE_ORE, FabricItemSettings().group(GROUP)))
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "titanium_block"), BlockItem(Blocks.TITANIUM_BLOCK, FabricItemSettings().group(GROUP)))
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "godstone"), BlockItem(Blocks.GODSTONE, FabricItemSettings().group(GROUP)))
         Registry.register(Registry.ITEM, Identifier(MOD_ID, "godstone_grass"), BlockItem(Blocks.GODSTONE_GRASS, FabricItemSettings().group(GROUP)))

@@ -45,9 +45,7 @@
       "nix:skyforest",
       "nix:aether_glowstone",
       "nix:aether_skyrocks",
-      "minecraft:ore_coal",
-      "minecraft:ore_diamond",
-      "minecraft:ore_iron",
+      "nix:titanium_godstone_ore",
       "nix:aether_clouds"
     ]
   ]

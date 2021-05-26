@@ -51,6 +51,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     public void onDeath(DamageSource source, CallbackInfo ci) {
         //do stuff
     }
+
     @Inject(method ="damage", at = @At("HEAD"))
     public void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         Item helmet = getEquippedStack(EquipmentSlot.HEAD).getItem();
